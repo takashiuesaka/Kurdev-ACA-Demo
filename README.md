@@ -9,9 +9,9 @@
 2. docker build .\WeatherApi\ -t kuradev/weatherapi:latest
 3. docker run -d -it --rm -p 8080:8080 --name weatherapi kuradev/weatherapi:latest
 4. docker run -d -it --rm -p 18080:8080 --name blazorwebapp -e Services__weatherapi='http://weatherapi:8080' kuradev/blazorwebapp:latest
-5. ネットワークを作成してコンテナを接続（これをすることで、BlazorWebAppからコンテナ名で通信できる）
-    docker network create my-network -d bridge
-    docker network connect my-network weatherapi
+5. ネットワークを作成してコンテナを接続（これをすることで、BlazorWebAppからコンテナ名で通信できる）  
+    docker network create my-network -d bridge  
+    docker network connect my-network weatherapi  
     docker network connect my-network blazorwebapp
 
 ## Azure Container Registry にプッシュ
