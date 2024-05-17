@@ -1,7 +1,8 @@
 ## ローカル環境で動作確認
 
 1. git clone
-2. WeatherApi のポート番号を確認して、もし変更されていたらBlazorWebAppのlaunchSettings.jsonを開き、"Services__weatherapi": "http://localhost:5289"のポート番号を直す
+2. WeatherApi のポート番号を確認して、もし変更されていたら　BlazorWebApp　の　Properties/launchSettings.json　を開き、"Services__weatherapi": "http://localhost:5289"　のポート番号をWeatherApiのポート番号に修正する
+   - WeatherApi のポート番号は、WeatherApi の Properties/launchSettings.jsonを開いて、profiles.http.applicationUrl に記載された URL の後ろのポート番号。
 
 ## ローカル環境でコンテナの動作確認をする
 
